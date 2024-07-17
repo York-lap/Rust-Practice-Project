@@ -1,0 +1,10 @@
+[package]
+name = "Async-Await"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+error-chain = "0.12.4"
+reqwest = {version = "0.12.5", features = ["blocking","json"]}
+tokio = {version = "1.38.1",features = ["full"]}
+
