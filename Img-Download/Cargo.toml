@@ -1,0 +1,11 @@
+[package]
+name = "Img-Download"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+error-chain = "0.12.4"
+reqwest = "0.12.5"
+tokio = {version = "1.21.1", features = ["full"]}
+tempfile = "3.3.0"
+
