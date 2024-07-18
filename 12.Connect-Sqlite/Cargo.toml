@@ -1,0 +1,20 @@
+[package]
+name = "Connect-Sqlite"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# What we need?
+
+# 1.To connect the sqlite with async, you need a crate which supply
+# sql & async+awiat, so we import the `sqlx`.You can get info from 
+# https://github.com/launchbadge/sqlx
+
+# async-std + native-tls --- In addition, we should select the database we use in `features`----sqlite
+sqlx = { version = "0.7", features = [ "runtime-async-std", "tls-native-tls", "sqlite" ] }
+
+# 2. In sqlx, we mentioned the async-std, it is also a external crate, we should import it.
+# We can get info from: https://docs.rs/async-std/latest/async_std/
+async-std = {version = "1.12.0", features = ["attributes"]}
+
+
