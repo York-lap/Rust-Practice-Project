@@ -1,0 +1,13 @@
+[package]
+name = "Acticx-Rhai-ApiTest"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# In this project, we will create a Actix-web server
+# and use the Rhai scripting language to process data in HTTP requests
+
+# https://github.com/actix/actix-web
+actix-web = "4"
+# https://crates.io/crates/rhai
+rhai = "1.19.0"
