@@ -3,7 +3,7 @@
  * @Date: 2024-07-16 11:28:16
  * @Description: File Compress[DgzEncoder]
  */
-extern crate flate2;
+
 
 use std::io::{BufReader,copy};
 use std::fs::File;
